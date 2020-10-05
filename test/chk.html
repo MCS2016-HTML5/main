@@ -25,6 +25,14 @@
 	localStorage.tprg= t;
 	alert("以降のロードでts3・ms3まで飛びます");
 	}
+	// セーブデータのクリア
+	function ClearSaveStatus(){
+		var tc = "";
+		var mc = "";
+	localStorage.tprg= tc;
+	localStorage.mprg= mc;
+	alert("以降のロードでts3・ms3まで飛びます");
+	}
         </script>
      </head>
     <body>
@@ -33,6 +41,7 @@
 		<p><button onclick="sSave()">数値を保存</button></p>
 	    <p><button onclick="sload()">数値を確認</button></p>
 		<p><button onclick="pload()">セーブ状況の確認(本文→メディアの順)</button></p>
-	    <p><button onclick="brancheck()">ロード時にts3・ms3を開く(分岐チェック用)</button></p>
+		<p><button onclick="brancheck()">ロード時にts3・ms3を開く(分岐チェック用)</button></p>
+		<p><button onclick="ClearSaveStatus()">セーブデータのクリア</button></p>
     </body>
 </html>
